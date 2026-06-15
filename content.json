@@ -1,9 +1,11 @@
 {
-  "_comment": "Edit this file to update your site text, then run `npm run build`. Plain text only — no HTML needed. Lists are arrays; add/remove items freely.",
+  "_comment": "Edit this file to update your site text, then run `npm run build`. Plain text only — no HTML needed. Lists are arrays; add/remove items freely. For a photo: drop an image into the assets/ folder and set \"photo\" to its path, e.g. \"assets/norm.jpg\". Leave it \"\" for no photo.",
 
   "siteUrl": "https://normanchella.com",
   "name": "Norman Chella",
   "metaDescription": "Norm in a nutshell — interviewer, community builder, podcaster. Host of Podlovers Asia, RoamFM, AntiFool, Tempered Fables and more.",
+
+  "photo": "",
 
   "kicker": "Hydrangea Meridian · an Eterna extension",
   "title": "This is Norm.",

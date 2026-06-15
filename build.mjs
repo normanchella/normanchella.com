@@ -64,6 +64,7 @@ const html = `<!doctype html>
 <div class="wrap">
 
   <header class="hero">
+    ${c.photo ? `<img class="hero-photo" src="${esc(c.photo)}" alt="${esc(c.name)}" width="140" height="140">` : ""}
     <span class="mark">${esc(c.kicker || "")}</span>
     <h1>${esc(c.title)}</h1>
     <p class="tagline">${esc(c.tagline || "")}</p>
