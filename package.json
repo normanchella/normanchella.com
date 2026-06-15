@@ -1,0 +1,12 @@
+{
+  "name": "normanchella.com",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Static personal site for Norman Chella. Hydrangea Meridian — an identity extension of the Eterna garden.",
+  "scripts": {
+    "build": "node build.mjs",
+    "serve": "node build.mjs && node serve.mjs"
+  },
+  "engines": { "node": ">=18" }
+}

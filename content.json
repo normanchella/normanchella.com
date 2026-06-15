@@ -1,0 +1,60 @@
+{
+  "_comment": "Edit this file to update your site text, then run `npm run build`. Plain text only — no HTML needed. Lists are arrays; add/remove items freely.",
+
+  "siteUrl": "https://normanchella.com",
+  "name": "Norman Chella",
+  "metaDescription": "Norm in a nutshell — interviewer, community builder, podcaster. Host of Podlovers Asia, RoamFM, AntiFool, Tempered Fables and more.",
+
+  "kicker": "Hydrangea Meridian · an Eterna extension",
+  "title": "This is Norm.",
+  "tagline": "Norm in a nutshell.",
+
+  "about": [
+    "Hi there — welcome to my business card.",
+    "**My name is Norman T. Chella.** I interview people, build communities, and create things. I'm the host of Podlovers Asia, RoamFM, AntiFool, Tempered Fables, and other shows.",
+    "I'm a big believer in ==podcasting==, ==knowledge work==, and ==polymathic thinking==. I read far and wide."
+  ],
+
+  "currently": [
+    "Podcast Librarian at Podchaser — keeping up to date with credits and new podcasts, and building a relationship with every podcaster in the world. My role is to immortalise your work.",
+    "SuperLearner Certified Coach in memory and speed-reading techniques — helping high-performance autodidacts build Memory Palaces, train imagination, and remember everything."
+  ],
+
+  "previously": "Ex-Head of Marketing at a Japanese FinTech company · Chief of Business Development at Renegade Radio, Malaysia's premium podcasting network · Science Communications Director for the Planetary Health Lab, University of Edinburgh.",
+
+  "whyHowWhat": {
+    "why": "I discover and share wisdom from all sources so we can better understand the world and each other.",
+    "how": "Regular self-introspection, asking questions to understand, and learning across many fields.",
+    "what": "Podcasting, writing, consulting, and coaching. I'm a digital marketer specialising in content and outreach."
+  },
+
+  "closing": "Stay warm, stay lovely. —N",
+
+  "shows": [
+    { "name": "Tempered Fables", "meta": "Fictional short stories · part of Eterna", "url": "https://temperedfables.com", "feature": true },
+    { "name": "Podlovers Asia", "meta": "Podcast", "url": "https://podloversasia.buzzsprout.com/" },
+    { "name": "RoamFM", "meta": "Podcast", "url": "https://roamfm.buzzsprout.com/" },
+    { "name": "AntiFool", "meta": "Podcast", "url": "https://antifool.buzzsprout.com/" },
+    { "name": "Ants Under The Sun", "meta": "Podcast", "url": "https://ants.buzzsprout.com/" },
+    { "name": "This is Norm", "meta": "Podcast", "url": "https://thisisnorm.buzzsprout.com/" }
+  ],
+
+  "workWith": [
+    { "label": "Improve memory & speed-reading — let me be your coach", "tag": "Coaching", "url": "https://superhumanacademy.com/coach/norman-chella/?ref=1aea93" }
+  ],
+
+  "contact": [
+    { "label": "Email", "tag": "norman.chella@gmail.com", "url": "mailto:norman.chella@gmail.com" },
+    { "label": "Twitter / X", "tag": "@NormanChella", "url": "https://twitter.com/NormanChella" },
+    { "label": "LinkedIn", "tag": "in/normanchella", "url": "https://www.linkedin.com/in/normanchella/" },
+    { "label": "Podchaser", "tag": "Profile", "url": "https://www.podchaser.com/users/normanchella" },
+    { "label": "Instagram", "tag": "@normanchella", "url": "https://www.instagram.com/normanchella/" },
+    { "label": "Quora", "tag": "Profile", "url": "https://www.quora.com/profile/Norman-T-Chella" }
+  ],
+
+  "support": [
+    { "label": "Buy Me A Coffee", "tag": "☕", "url": "https://www.buymeacoffee.com/cw2LbQe" }
+  ],
+
+  "footer": "Part of the Eterna garden"
+}

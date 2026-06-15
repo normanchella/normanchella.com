@@ -1,0 +1,139 @@
+/* ============================================================
+   normanchella.com — Hydrangea Meridian (Universe 0)
+   An identity-layer extension of the Eterna garden.
+   ------------------------------------------------------------
+   Palette + type taken directly from the Eterna Brand Design
+   Guide v1.0 (§3.2 Hydrangea Meridian, §4). Dark-first; no
+   light mode (brand principle §8.4).
+   ============================================================ */
+:root {
+  /* Backgrounds */
+  --bg:         #141d28;   /* Deep navy */
+  --bg-2:       #1a2535;   /* Dark ocean blue */
+  --bg-3:       #233346;   /* Midnight blue */
+  --bg-hover:   #2a3d54;   /* Lifted navy */
+
+  /* Text */
+  --text:       #C3C3C3;   /* Warm grey */
+  --muted:      #8899aa;   /* Steel blue-grey */
+  --heading:    #F2F2F2;   /* Near-white */
+  --title:      #FFBE49;   /* Warm amber */
+  --bold:       #FF4E4E;   /* Vivid red */
+  --italic:     #FF7EA2;   /* Rose pink */
+
+  /* Links + accents */
+  --link:       #C26EFF;   /* Bright purple (internal) */
+  --link-ext:   #7CE973;   /* Fresh green (external) */
+  --link-hover: #92FFFF;   /* Electric cyan */
+  --accent:     #C26EFF;   /* Bright purple */
+  --accent-2:   #FFBE49;   /* Warm amber */
+  --hi-bg:      #FFFF80;   /* Bright yellow */
+  --hi-text:    #47405E;   /* Muted purple */
+  --tag:        #FFD17E;   /* Soft gold */
+
+  /* Lines */
+  --line:       #2a3d54;   /* Muted navy */
+  --line-strong:#7A6DAA;   /* Dusty purple */
+
+  /* Type (Hydrangea Meridian) */
+  --font-body: "Overlock", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-head: "Raleway", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  --maxw: 720px;
+  --radius: 12px;
+  --shadow: 0 4px 16px rgba(0,0,0,.2);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+::selection { background: #EE1D0D; color: #fff; }
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--text);
+  background:
+    radial-gradient(1100px 600px at 85% -10%, rgba(194,110,255,.12), transparent 60%),
+    radial-gradient(900px 520px at -10% 5%, rgba(35,51,70,.7), transparent 55%),
+    var(--bg);
+  background-attachment: fixed;
+  line-height: 1.7;
+  font-size: 17px;
+  letter-spacing: 0;
+}
+a { color: var(--link); text-decoration: none; }
+a:hover { color: var(--link-hover); text-decoration: underline; }
+a[href^="http"]:not([href*="normanchella.com"]) { color: var(--link-ext); }
+a[href^="http"]:not([href*="normanchella.com"]):hover { color: var(--link-hover); }
+
+.wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 22px; }
+
+/* Hero */
+.hero { padding: 66px 0 30px; text-align: center; }
+.hero .mark {
+  display: inline-block; font-family: var(--font-head); font-weight: 600;
+  letter-spacing: .16em; text-transform: uppercase; font-size: 11px;
+  color: var(--accent); margin-bottom: 18px;
+}
+.hero h1 {
+  font-family: var(--font-head); font-weight: 800;
+  font-size: clamp(34px, 7vw, 50px); margin: 0 0 8px; color: var(--title);
+  letter-spacing: 0;
+}
+.hero .tagline { color: var(--muted); font-size: 18px; margin: 0; }
+
+/* Sections */
+section { padding: 30px 0; border-top: 1px solid var(--line); }
+section:first-of-type { border-top: 0; }
+h2 {
+  font-family: var(--font-head); color: var(--heading); font-weight: 700;
+  font-size: 14px; letter-spacing: .12em; text-transform: uppercase;
+  margin: 0 0 16px;
+}
+p { margin: 0 0 14px; }
+.lead { font-size: 19px; color: var(--heading); }
+strong, .b { color: var(--bold); font-weight: 700; }
+em { color: var(--italic); }
+.hl {
+  background: var(--hi-bg); color: var(--hi-text);
+  padding: 1px 5px; border-radius: 3px; font-weight: 600;
+}
+.fine { color: var(--muted); font-size: 15px; }
+
+/* Shows grid */
+.grid {
+  display: grid; gap: 12px;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+.card {
+  display: flex; flex-direction: column; justify-content: flex-end;
+  min-height: 100px; padding: 14px; border-radius: var(--radius);
+  background: var(--bg-2); border: 1px solid var(--line);
+  box-shadow: var(--shadow); color: var(--text);
+  transition: transform .15s ease, border-color .15s ease, background .15s ease;
+}
+.card:hover { transform: translateY(-2px); text-decoration: none;
+  background: var(--bg-hover); border-color: var(--line-strong); }
+.card .name { font-family: var(--font-head); font-weight: 700; font-size: 17px; color: var(--heading); }
+.card .meta { color: var(--muted); font-size: 13px; }
+.card.feature {
+  background: linear-gradient(135deg, rgba(194,110,255,.22), rgba(255,190,73,.12)), var(--bg-3);
+  border-color: var(--line-strong);
+}
+.card.feature .name { color: #fff; }
+.card.feature .meta { color: var(--accent-2); }
+
+/* Link rows */
+.links { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.links a {
+  display: flex; align-items: center; gap: 10px; padding: 12px 14px;
+  background: var(--bg-2); border: 1px solid var(--line);
+  border-radius: 10px; color: var(--text);
+}
+.links a:hover { border-color: var(--accent); text-decoration: none; background: var(--bg-hover); }
+.links .tag { margin-left: auto; color: var(--tag); font-size: 13px; }
+
+/* Footer */
+footer { text-align: center; padding: 40px 0 56px; color: var(--muted); font-size: 14px; }
+footer .eterna { color: var(--accent); }
+
+@media (max-width: 480px){ body{font-size:16px;} .hero{padding-top:48px;} }
