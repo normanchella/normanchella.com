@@ -137,3 +137,5 @@ footer { text-align: center; padding: 40px 0 56px; color: var(--muted); font-siz
 footer .eterna { color: var(--accent); }
 
 @media (max-width: 480px){ body{font-size:16px;} .hero{padding-top:48px;} }
+
+.hero-photo{display:block;width:140px;height:140px;margin:0 auto 22px;border-radius:50%;object-fit:cover;border:2px solid var(--line-strong);box-shadow:var(--shadow);}
